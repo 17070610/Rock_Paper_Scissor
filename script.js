@@ -34,7 +34,7 @@ function playGame(){
   console.log(roundPlay(computerChoice, playerChoice)) 
 }
 
-function playAgain(){
+function play(){
   playGame()
   let userChoice = prompt("Do you want to play again? (Yes/No):").toLowerCase();
   do{
@@ -48,7 +48,7 @@ function playAgain(){
     }  
     else
       prompt("Please enter a valid choice, (Yes/No)")
+      break;
   }while(true)
 }
-// playGame()
-playAgain()
+play()
